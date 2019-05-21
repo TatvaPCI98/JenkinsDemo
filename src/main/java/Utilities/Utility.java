@@ -41,7 +41,7 @@ public class Utility
 		}
 		else if(StringUtils.equals(browser, "chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\hello\\JenkinsTest\\src\\main\\resources\\drivers\\chromedriver.exe");
 			driver= GetBrowser.getChromeDriver();
 		}
 		driver.manage().window().maximize();
