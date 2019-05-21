@@ -36,7 +36,7 @@ public class Utility
 		
 		if(StringUtils.equals(browser, "firefox"))
 		{				
-			System.setProperty("webdriver.gecko.driver",".\\src\\main\\resources\\drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver","D:\\hello\\JenkinsTest\\src\\main\\resources\\drivers\\geckodriver.exe");
 			driver =GetBrowser.getFirefoxDriver();
 		}
 		else if(StringUtils.equals(browser, "chrome"))
