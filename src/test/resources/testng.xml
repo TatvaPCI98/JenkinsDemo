@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AutomationTestSuite" verbose="5" parallel="methods">
+	<parameter name="browser" value="chrome" /><!-- browser can be firefox or chrome -->
+	<parameter name="url" value="https://www.gmail.com/" />
+	<parameter name="uName" value="qatatva13" />
+	<parameter name="password" value="Admin@1234" />
+	<parameter name="ToMail" value="pathik.patel@tatvasoft.com" />
+
+	<test name="Gmail" thread-count="1">
+		<classes>
+			<class name="TestActions.TC_GmailLogin"></class>
+			<class name="TestActions.TC_ComposeMessage"></class>
+		</classes>
+	</test>
+</suite>
