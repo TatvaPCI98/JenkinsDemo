@@ -36,12 +36,12 @@ public class Utility
 		
 		if(StringUtils.equals(browser, "firefox"))
 		{				
-			System.setProperty("webdriver.gecko.driver","D:\\hello\\JenkinsTest\\src\\main\\resources\\drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver",".\\src\\main\\resources\\drivers\\geckodriver.exe");
 			driver =GetBrowser.getFirefoxDriver();
 		}
 		else if(StringUtils.equals(browser, "chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "D:\\hello\\JenkinsTest\\src\\main\\resources\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver.exe");
 			driver= GetBrowser.getChromeDriver();
 		}
 		driver.manage().window().maximize();
